@@ -21,7 +21,7 @@ from telegram.error import BadRequest
 
 #Details Like Bot Token Nigaas 
 BOT_TOKEN = "8560262173:AAE1cYkTvqpA2EvL255oIdndfYrSpguIsFk" #add your bot token 
-ADMIN_ID =  #change it and add your id
+ADMIN_ID = 8041358067  #change it and add your id
 DEV_CHANNEL_URL = "https://t.me/Rudeus_ssss" #change it your username 
 HYPERLINK_URL = "https://t.me/Rudeus_ssss" #change it and add your youser name 
 USERS_FILE = 'users.json' #do not change it 
