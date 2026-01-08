@@ -3,21 +3,20 @@ from telegram.ext import ApplicationBuilder
 from bot import setup_handlers, BOT_TOKEN, ADMIN_ID
 
 def main():
-    """
-    Starts the Telegram bot.
-    """
-    print("Starting bot...")
-    
-    # Create the Application and pass it your bot's token.
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    print("   🚀 BOT STARTING...")
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+
+    # Build Application
     application = ApplicationBuilder().token(BOT_TOKEN).build()
 
-    # Setup all the handlers (commands, messages, etc.) from bot.py
+    # Setup Handlers from bot.py
     setup_handlers(application)
 
-    print(f"Bot started! Admin ID: {ADMIN_ID}")
-    print("Polling for updates...")
-    
-    # Run the bot
+    print(f"✅ Bot is Live!")
+    print(f"👑 Admin: {ADMIN_ID}")
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+
     application.run_polling()
 
 if __name__ == '__main__':
