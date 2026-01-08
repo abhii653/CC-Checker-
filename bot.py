@@ -188,7 +188,7 @@ async def handle_cc_check(update: Update, context: ContextTypes.DEFAULT_TYPE, ga
         return
 
     is_mass_check = update.message.text.split(' ')[0].startswith('/m')
-    actual_max_cards = 7 if is_mass_check else 1
+    actual_max_cards = 1000 if is_mass_check else 1
     cards = [extract_cc_details(line) for line in update.message.text.split('\n') if extract_cc_details(line)]
     
     if not cards:
