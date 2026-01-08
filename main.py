@@ -1,6 +1,4 @@
-#main.py
-
-
+# main.py
 from telegram.ext import ApplicationBuilder
 from bot import setup_handlers, BOT_TOKEN, ADMIN_ID
 
@@ -19,7 +17,7 @@ def main():
     print(f"Bot started! Admin ID: {ADMIN_ID}")
     print("Polling for updates...")
     
-    #Run-Cmds @Abhinavinaman
+    # Run the bot
     application.run_polling()
 
 if __name__ == '__main__':
